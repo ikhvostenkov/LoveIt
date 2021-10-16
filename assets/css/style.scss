@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import "_variables";
-@import "_override";
+@import "variables";
+@import "override";
 
 @import "_mixin/index";
 
@@ -16,4 +16,4 @@
 
 @import "_core/media";
 
-@import "_custom";
+@import "custom";
