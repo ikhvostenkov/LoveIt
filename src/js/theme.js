@@ -368,6 +368,10 @@ class Theme {
                     $chroma.classList.toggle('open');
                 }, false);
                 $header.appendChild($title);
+                const $fileName = document.createElement('span');
+                $fileName.classList.add('file-name');
+                $title.insertAdjacentHTML('afterend', $chroma.parentNode.parentNode.className);
+                $header.appendChild($fileName);
                 const $ellipses = document.createElement('span');
                 $ellipses.insertAdjacentHTML('afterbegin', '<i class="fas fa-ellipsis-h fa-fw" aria-hidden="true"></i>');
                 $ellipses.classList.add('ellipses');
