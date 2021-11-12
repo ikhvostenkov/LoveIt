@@ -96,6 +96,10 @@ code, pre, .highlight table, .highlight tr, .highlight td {
           content: $text;
         }
       }
+
+      .file-name {
+        width: 90%;
+      }
     }
 
     .lntd:first-child {
