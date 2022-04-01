@@ -2,7 +2,7 @@
 {{- $fingerprint := .Scratch.Get "fingerprint" -}}
 {{- $comment := .Scratch.Get "comment" | default dict -}}
 {{- $commentConfig := dict -}}
-{{- $noComment := .Params.noComment }}}
+{{- $noComment := .Params.noComment }}
 
 {{- if not $noComment | and $comment.enable -}}
     <div id="comments">
