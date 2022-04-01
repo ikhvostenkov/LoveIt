@@ -4,7 +4,7 @@
 {{- $commentConfig := dict -}}
 {{- $noComment := .Params.noComment }}}
 
-{{- if (and ($comment.enable) (not $noComment) ) -}}
+{{- if not $noComment | and $comment.enable -}}
 {{- if $comment.enable -}}
     <div id="comments">
         {{- /* Disqus Comment System */ -}}
