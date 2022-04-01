@@ -5,7 +5,6 @@
 {{- $noComment := .Params.noComment }}}
 
 {{- if not $noComment | and $comment.enable -}}
-{{- if $comment.enable -}}
     <div id="comments">
         {{- /* Disqus Comment System */ -}}
         {{- $disqus := $comment.disqus | default dict -}}
